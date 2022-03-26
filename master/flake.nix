@@ -11,6 +11,7 @@
   inputs.src-nimSocks-master.ref   = "refs/heads/master";
   inputs.src-nimSocks-master.owner = "enthus1ast";
   inputs.src-nimSocks-master.repo  = "nimSocks";
+  inputs.src-nimSocks-master.dir   = "";
   inputs.src-nimSocks-master.type  = "github";
   
   inputs."nimsha2".owner = "nim-nix-pkgs";
