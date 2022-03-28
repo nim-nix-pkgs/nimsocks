@@ -11,7 +11,6 @@
   inputs.src-nimSocks-master.ref   = "refs/heads/master";
   inputs.src-nimSocks-master.owner = "enthus1ast";
   inputs.src-nimSocks-master.repo  = "nimSocks";
-  inputs.src-nimSocks-master.dir   = "";
   inputs.src-nimSocks-master.type  = "github";
   
   inputs."nimsha2".owner = "nim-nix-pkgs";
@@ -29,6 +28,14 @@
   inputs."dbg".type  = "github";
   inputs."dbg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dbg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github.com/enthus1ast/nimisprivateip".owner = "nim-nix-pkgs";
+  inputs."github.com/enthus1ast/nimisprivateip".ref   = "master";
+  inputs."github.com/enthus1ast/nimisprivateip".repo  = "github.com/enthus1ast/nimisprivateip";
+  inputs."github.com/enthus1ast/nimisprivateip".dir   = "";
+  inputs."github.com/enthus1ast/nimisprivateip".type  = "github";
+  inputs."github.com/enthus1ast/nimisprivateip".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/enthus1ast/nimisprivateip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
