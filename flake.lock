@@ -3,20 +3,22 @@
     "dbg": {
       "inputs": {
         "flakeNimbleLib": [
+          "nimsocks-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "nimsocks-master",
           "nixpkgs"
         ],
         "src-dbg-master": "src-dbg-master"
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1651917824,
-        "narHash": "sha256-l4BBhDnE9TQE2VJCwXgXfpIN0vy6bxQsT5Zc6hsTu7o=",
+        "lastModified": 1651555364,
+        "narHash": "sha256-7IWoOsdM0ebiTjL2gD8YY3+HZyC9DrcnqmguWBk+Fxk=",
         "owner": "nim-nix-pkgs",
         "repo": "dbg",
-        "rev": "148dafd9d0bbe8c8238237c35be0ddec07289c4a",
+        "rev": "3d7c85c78e23390841a758b04ac0271a4ad91ac7",
         "type": "github"
       },
       "original": {
@@ -51,9 +53,11 @@
     "github-enthus1ast-isprivateip": {
       "inputs": {
         "flakeNimbleLib": [
+          "nimsocks-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "nimsocks-master",
           "nixpkgs"
         ],
         "src-isPrivateIp-master": "src-isPrivateIp-master"
@@ -78,20 +82,22 @@
     "nimsha2": {
       "inputs": {
         "flakeNimbleLib": [
+          "nimsocks-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "nimsocks-master",
           "nixpkgs"
         ],
         "src-nimSHA2-master": "src-nimSHA2-master"
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1651918228,
-        "narHash": "sha256-DH7tJ9o4MuE5v7W0VnD56M39TQRfl1D58i0AvFnjAWQ=",
+        "lastModified": 1651555775,
+        "narHash": "sha256-stsXLe1WrbnRH3xl1peiJby9C7D5/hb+TKDHabWoBWQ=",
         "owner": "nim-nix-pkgs",
         "repo": "nimsha2",
-        "rev": "309b65a1911f68632ee28d9562f36a7cfb4c04b2",
+        "rev": "e08e950959a512478aa13e4de7c5c1193ddd36c9",
         "type": "github"
       },
       "original": {
@@ -99,6 +105,36 @@
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "nimsha2",
+        "type": "github"
+      }
+    },
+    "nimsocks-master": {
+      "inputs": {
+        "dbg": "dbg",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "github-enthus1ast-isprivateip": "github-enthus1ast-isprivateip",
+        "nimsha2": "nimsha2",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimSocks-master": "src-nimSocks-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651589748,
+        "narHash": "sha256-/vRGywbh6pMAOMRejwZk/bKSDAegw8GLWpX+xp3huiQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimsocks",
+        "rev": "e80838289a3248b47fd74bb2a48bc9b418b1c172",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimsocks",
         "type": "github"
       }
     },
@@ -115,12 +151,9 @@
     },
     "root": {
       "inputs": {
-        "dbg": "dbg",
         "flakeNimbleLib": "flakeNimbleLib",
-        "github-enthus1ast-isprivateip": "github-enthus1ast-isprivateip",
-        "nimsha2": "nimsha2",
-        "nixpkgs": "nixpkgs",
-        "src-nimSocks-master": "src-nimSocks-master"
+        "nimsocks-master": "nimsocks-master",
+        "nixpkgs": "nixpkgs"
       }
     },
     "src-dbg-master": {
