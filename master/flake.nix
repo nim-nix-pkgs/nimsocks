@@ -29,13 +29,13 @@
   inputs."dbg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dbg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."github.com/enthus1ast/nimisprivateip".owner = "nim-nix-pkgs";
-  inputs."github.com/enthus1ast/nimisprivateip".ref   = "master";
-  inputs."github.com/enthus1ast/nimisprivateip".repo  = "github.com/enthus1ast/nimisprivateip";
-  inputs."github.com/enthus1ast/nimisprivateip".dir   = "";
-  inputs."github.com/enthus1ast/nimisprivateip".type  = "github";
-  inputs."github.com/enthus1ast/nimisprivateip".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."github.com/enthus1ast/nimisprivateip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."github-enthus1ast-isprivateip".owner = "nim-nix-pkgs";
+  inputs."github-enthus1ast-isprivateip".ref   = "master";
+  inputs."github-enthus1ast-isprivateip".repo  = "github-enthus1ast-isprivateip";
+  inputs."github-enthus1ast-isprivateip".dir   = "master";
+  inputs."github-enthus1ast-isprivateip".type  = "github";
+  inputs."github-enthus1ast-isprivateip".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-enthus1ast-isprivateip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
